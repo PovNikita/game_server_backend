@@ -10,7 +10,7 @@
  * **Release:**
 ```bash
 mkdir /app/build
-cd /app/build && \
+cd /app/build
 conan install .. --build=missing -s compiler.libcxx=libstdc++11 -s build_type=Release
 cmake -DCMAKE_BUILD_TYPE=Release
 cmake --build .
@@ -18,7 +18,7 @@ cmake --build .
  * **Debug:**
 ```bash
 mkdir /app/build
-cd /app/build && \
+cd /app/build
 conan install .. --build=missing -s compiler.libcxx=libstdc++11 -s build_type=Debug
 cmake -DCMAKE_BUILD_TYPE=Debug
 cmake --build .
